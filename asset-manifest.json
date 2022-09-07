@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/latlong/static/css/main.073c9b0a.css",
+    "main.js": "/latlong/static/js/main.95d0bcc2.js",
+    "static/js/787.7100a24d.chunk.js": "/latlong/static/js/787.7100a24d.chunk.js",
+    "index.html": "/latlong/index.html",
+    "main.073c9b0a.css.map": "/latlong/static/css/main.073c9b0a.css.map",
+    "main.95d0bcc2.js.map": "/latlong/static/js/main.95d0bcc2.js.map",
+    "787.7100a24d.chunk.js.map": "/latlong/static/js/787.7100a24d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.95d0bcc2.js"
+  ]
+}

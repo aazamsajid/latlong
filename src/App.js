@@ -6,12 +6,13 @@ function App()
  const [long, setLong] = useState(null);
  const geolocationAPI = navigator.geolocation;
  const url="https://google.com";
-
+ if (!position) {
  geolocationAPI.getCurrentPosition((position) => {
   const { coords } = position;
   setLat(coords.latitude);
   setLong(coords.longitude);
   })
+}
 
 
 

@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+function App() 
+{
+ const [lat, setLat] = useState(null);
+ const [long, setLong] = useState(null);
+ const geolocationAPI = navigator.geolocation;
+ const url="https://google.com";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+ geolocationAPI.getCurrentPosition((position) => {
+  const { coords } = position;
+  setLat(coords.latitude);
+  setLong(coords.longitude);
+  })
 
+
+
+
+return (
+      <div className="App">
+        <p>Your lat  is: {[lat]}</p>
+        <p>Your long is: {[long]}</p>
+        <p>{lat},{long}</p>  
+
+      </div>
+      );
+};
+
+
+
+ 
 export default App;

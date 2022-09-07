@@ -20,7 +20,7 @@ function App()
 return (
       <div className="App">
         <p>Your lat  is: {[lat]}</p>
-        <p>Your long is: {[long]}</p>
+        <p>Your long is w: {[long]}</p>
         <p>{lat},{long}</p>  
 
       </div>
